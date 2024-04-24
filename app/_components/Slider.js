@@ -24,7 +24,7 @@ const Slider = ({ data }) => {
       <CarouselContent className="flex flex-row gap-3">
         {data.map((item) => (
           <CarouselItem
-            className="basis-1/3 flex flex-col items-center shadow-md border border-[#eedfbe] p-4 rounded-3xl gap-2 select-none cursor-pointer hover:shadow-lg transition duration-300 ease-in-out z-20"
+            className="md:basis-1/3  flex flex-col items-center shadow-md border border-[#eedfbe] p-4 rounded-3xl gap-2 select-none cursor-pointer hover:shadow-lg transition duration-300 ease-in-out z-20"
             key={item.id}
             onClick={() => router.push(`/product/${item.id}`)}
           >

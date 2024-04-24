@@ -17,8 +17,8 @@ const page = ({ params }) => {
 
   return (
     <div className="flex flex-col mx-auto justify-center items-center">
-      <div className="rounded-xl bg-[#f7efdf] shadow-lg mt-2 w-max p-14 flex flex-row gap-x-10">
-        <Carousel className="w-full max-w-lg select-none">
+      <div className="rounded-xl bg-[#f7efdf] shadow-lg mt-2 w-max text-center px-14 py-14 flex md:flex-row flex-col md:gap-x-10 gap-x-2">
+        <Carousel className="w-full md:max-w-lg max-sm:max-w-sm select-none">
           <CarouselContent>
             {product.images.map((image, index) => (
               <CarouselItem key={index}>
@@ -41,7 +41,7 @@ const page = ({ params }) => {
               ${product.price.toLocaleString("es-CO")} COP
             </p>
           </div>
-          <div className="flex flex-row gap-x-2">
+          <div className="flex flex-row gap-x-2 mx-auto">
             <button className="bg-[#fedcba] px-4 py-2 rounded-lg z-20">
               Comprar
             </button>
@@ -51,9 +51,9 @@ const page = ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="bg-[#fbf7ef] w-full mt-2 text-center mx-auto grid place-content-center">
+      <div className="bg-[#fbf7ef] w-full mt-2 text-center mx-auto grid place-content-center gap-y-5">
         <h1 className="font-bold text-3xl">Otros productos</h1>
-        <Carousel className="w-full max-w-7xl mx-auto z-20">
+        <Carousel className="w-full md:max-w-7xl max-w-sm mx-auto z-20">
           <CarouselContent className="flex flex-row gap-3">
             {otherProduct.map((item) => (
               <CategoryProduct item={item} key={item.id} />
