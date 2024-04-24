@@ -17,7 +17,7 @@ const page = ({ params }) => {
 
   return (
     <div className="flex flex-col mx-auto justify-center items-center">
-      <div className="rounded-xl bg-[#f7efdf] shadow-lg mt-2 w-max text-center px-14 py-14 flex md:flex-row flex-col md:gap-x-10 gap-x-2">
+      <div className="rounded-xl bg-[#f7efdf] shadow-lg mt-2 w-max text-center px-14 py-14 flex md:flex-row flex-col md:gap-x-10 gap-x-2 mx-auto justify-center">
         <Carousel className="w-full md:max-w-lg max-sm:max-w-[220px] select-none">
           <CarouselContent>
             {product.images.map((image, index) => (

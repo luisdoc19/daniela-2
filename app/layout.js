@@ -3,6 +3,8 @@ import logo from "../public/logo.png";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import whatsapp from "../public/WhatsApp.svg.webp";
+import WhatsApp from "./_components/WhatsApp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +32,7 @@ export default function RootLayout({ children }) {
           </Link>
         </nav>
         {children}
+        <WhatsApp />
       </body>
     </html>
   );
