@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={inter.className && "bg-[#fbf7ef]"}>
-        <nav className="sticky top-0 w-full shadow-lg text-center z-40 bg-[#fbf7ef] items-center py-2 px-4">
+        <nav className="sticky top-0 w-full shadow-lg text-center z-40 bg-[#fbf7ef] items-center py-2 px-4 flex flex-row justify-between">
           <Link href="/">
             <Image
               src={logo}
@@ -30,6 +30,9 @@ export default function RootLayout({ children }) {
               className="w-[120px]"
             />
           </Link>
+          <a href="https://streamable.com/c84scq" _blank>
+            Sobre nosotros
+          </a>
         </nav>
         {children}
         <WhatsApp />
