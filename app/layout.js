@@ -30,7 +30,11 @@ export default function RootLayout({ children }) {
               className="w-[120px]"
             />
           </Link>
-          <a href="https://streamable.com/c84scq" _blank>
+          <a
+            href="https://streamable.com/c84scq"
+            _blank
+            className="bg-[#f7d7bb] p-2 rounded-lg sans text-sm font-medium"
+          >
             Sobre nosotros
           </a>
         </nav>
