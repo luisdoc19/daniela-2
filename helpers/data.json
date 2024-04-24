@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "name": "Anillos",
+    "price": 20000,
+    "images": [
+      "https://i.ibb.co/L6yhWSM/IMG-20240423-WA0024.jpg",
+      "https://i.ibb.co/M9vKydp/IMG-20240423-WA0010.jpg",
+      "https://i.ibb.co/Fb0PtZj/IMG-20240423-WA0012.jpg",
+      "https://i.ibb.co/nncBX6q/IMG-20240423-WA0005.jpg",
+      "https://i.ibb.co/L9HWPp8/IMG-20240423-WA0006.jpg",
+      "https://i.ibb.co/MfQ9bTQ/IMG-20240423-WA0007.jpg",
+      "https://i.ibb.co/NTRZ69z/IMG-20240423-WA0008.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cadenas",
+    "price": 18000,
+    "images": [
+      "https://i.postimg.cc/tJYcLgc6/IMG-20240423-WA0066.jpg",
+      "https://i.postimg.cc/rwSH63ff/IMG-20240423-WA0059.jpg",
+      "https://i.postimg.cc/nLpPn25p/IMG-20240423-WA0052.jpg",
+      "https://i.postimg.cc/tTYQHDZ7/IMG-20240423-WA0051.jpg",
+      "https://i.postimg.cc/hP9FgXj8/IMG-20240423-WA0049.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pulseras",
+    "price": 15000,
+    "images": [
+      "https://i.postimg.cc/0jnpdGnd/IMG-20240423-WA0135.jpg",
+      "https://i.postimg.cc/qvxztBmy/IMG-20240423-WA0055.jpg",
+      "https://i.postimg.cc/JnGndNR5/IMG-20240423-WA0061.jpg",
+      "https://i.postimg.cc/fTxbFTQp/IMG-20240423-WA0062.jpg",
+      "https://i.postimg.cc/P5y5X3xM/IMG-20240423-WA0063.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Topitos",
+    "price": 8000,
+    "images": [
+      "https://i.postimg.cc/ydbJVfLG/Screenshot-20240423-214453-Instagram.jpg",
+      "https://i.postimg.cc/13rr9QwY/Screenshot-20240423-214444-Instagram.jpg",
+      "https://i.postimg.cc/FKFgzBxF/Screenshot-20240423-214643-Instagram.jpg",
+      "https://i.postimg.cc/wv7XcRPS/Screenshot-20240423-214735-Instagram.jpg",
+      "https://i.postimg.cc/rs457Xqj/Screenshot-20240423-215154-Instagram.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Earcuff",
+    "price": 12000,
+    "images": [
+      "https://i.postimg.cc/C5bfmG46/Screenshot-20240423-214030-Instagram.jpg",
+      "https://i.postimg.cc/C5bfmG46/Screenshot-20240423-214030-Instagram.jpg",
+      "https://i.postimg.cc/cJ6gVym3/IMG-20240423-WA0057.jpg",
+      "https://i.postimg.cc/bvMDPCCB/IMG-20240423-WA0054.jpg",
+      "https://i.postimg.cc/RhxW63z1/IMG-20240423-WA0058.jpg"
+    ]
+  }
+]

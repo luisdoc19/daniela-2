@@ -1,0 +1,70 @@
+import React from "react";
+import data from "../../../helpers/data.json";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import CategoryProduct from "./_components/CategoryProduct";
+const page = ({ params }) => {
+  const { id } = params;
+  const product = data.find((item) => item.id === +id);
+  const otherProduct = data.filter((item) => item.id !== +id);
+
+  if (!product) return <div>Producto no encontrado</div>;
+
+  return (
+    <div className="flex flex-col mx-auto justify-center items-center">
+      <div className="rounded-xl bg-[#f7efdf] shadow-lg mt-2 w-max p-14 flex flex-row gap-x-10">
+        <Carousel className="w-full max-w-lg select-none">
+          <CarouselContent>
+            {product.images.map((image, index) => (
+              <CarouselItem key={index}>
+                <img
+                  key={index}
+                  src={image}
+                  alt={product.name}
+                  className="w-[420px] rounded-lg object-contain"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+        <div className="flex flex-col justify-between">
+          <div>
+            <h1 className="text-3xl font-bold">{product.name}</h1>
+            <p className="text-lg">
+              ${product.price.toLocaleString("es-CO")} COP
+            </p>
+          </div>
+          <div className="flex flex-row gap-x-2">
+            <button className="bg-[#fedcba] px-4 py-2 rounded-lg z-20">
+              Comprar
+            </button>
+            <button className="bg-[#e9dfcc] px-4 py-2 rounded-lg z-20">
+              Añadir al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#fbf7ef] w-full mt-2 text-center mx-auto grid place-content-center">
+        <h1 className="font-bold text-3xl">Otros productos</h1>
+        <Carousel className="w-full max-w-7xl mx-auto z-20">
+          <CarouselContent className="flex flex-row gap-3">
+            {otherProduct.map((item) => (
+              <CategoryProduct item={item} key={item.id} />
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
+    </div>
+  );
+};
+
+export default page;
