@@ -13,7 +13,7 @@ const WhatsApp = () => {
         className="w-[80px]"
         onClick={() =>
           window.open(
-            "https://wa.me/573046153778?text=Hola%20estoy%20interesado%20en%20Linda%20store",
+            "https://wa.me/573046153778?text=Hola%20estoy%20interesado%20en%20Liada%20store",
             "_blank"
           )
         }
